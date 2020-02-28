@@ -39,14 +39,14 @@ describe('POST api/auth/register', function () {
                 expect(res.type).toMatch(/text/);
             });
     });
-    it("should return 201 on register response", ()=> {
-        const expectedStatusCode = 201;
+    it("should return 201 on register response", () => {
         return request(server)
             .post('/api/auth/register')
             .send(Users)
             .then(res => {
                 expect(201);
-            });
+            })
+         
     });
     it("should return body on register response", function() {
         return request(server)
