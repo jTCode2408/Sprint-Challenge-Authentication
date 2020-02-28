@@ -7,7 +7,6 @@ const Users = require('./users-model');
 
 router.post('/register', (req, res) => {
   const newUser = req.body
-  
   // implement registration
   //hash password then do req
   const hash = crypt.hashSync(newUser.password, 10)
