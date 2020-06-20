@@ -6,8 +6,6 @@ const Users = require('./users-model')
 //tests for login/register ends
 //2 per endpoiint
 //REGISTER: should return 201, username, pass in req body
-//LOGIN: should return 200, token in req.body
-
 describe('auth-router', function () {
     it('should run tests', function () {
         expect(true).toBe(true);
